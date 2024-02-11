@@ -32,8 +32,23 @@ body {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 20px;
     margin-left: 50px;
+    color: #f1f1f1;
+}
+
+.btn-text-color {
+    color: #f1f1f1;
+}
+
+.transparent:hover,
+.transparent:active,
+.transparent:focus {
+    background: rgb(192, 251, 251, 0.1);
+}
+
+.addbtn {
+    color: #f1f1f1;
 }
 
 .openbtn {
