@@ -20,6 +20,7 @@ addButton.addEventListener("click", function() {
     if (game.length > 0) {
         game[0].remove();
     }
+    closeNav()
     startGame()
 })
 let game;
