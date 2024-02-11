@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="phaser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.70.0/phaser.min.js" integrity="sha512-DwXZikcH79iPi4Psc6TuG++FNbSxdM9K8GzovSqHbDOsSurmYHdHc/n3+cTTfW4Z6tsOZODyXwcicb+Pw88a0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
 	<body>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
             <textarea name="names" id="names" cols="50" rows="10" placeholder="enter names here followed by a new line"></textarea>
-            <button id="add">Add</button>
+            <button id="add" class="button">Add</button>
         </div>
         <div id="main">
             <button class="openbtn" onclick="openNav()">Open</button>
         </div>
         <div id="spinning-wheel" onclick="closeNav()"></div>
-        <script src="index.js"></script>
         <script src="game.js"></script>
 	</body>
 </html>

@@ -1,9 +1,21 @@
 // the game itself
+function openNav() {
+    document.getElementById("mySidebar").style.width = "450px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+
+function isNotEmpty(value) {
+    return value.trim() !== ''
+}
+
 let namesList = []
 const addButton = document.getElementById("add");
 addButton.addEventListener("click", function() {
     let names = document.getElementById("names");
-    namesList = names.value.split('\n');
+    namesList = names.value.split('\n').filter(isNotEmpty);
     let game = document.getElementsByTagName("canvas")
     if (game.length > 0) {
         game[0].remove();
@@ -59,7 +71,6 @@ function buildSlices(){
 }
 
 function gameOptionsFn() {
-    console.log("hi")
     return {
         slices: buildSlices(),
         // wheel rotation duration range, in milliseconds
@@ -111,7 +122,7 @@ function startGame() {
 }
 
 // once the window loads...
-// window.onload = startGame
+window.onload = startGame
 
 
 
