@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="phaser.min.js"></script>
+    </head>
+	<body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <textarea name="names" id="names" cols="50" rows="10" placeholder="enter names here followed by a new line"></textarea>
+            <button id="add">Add</button>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">Open</button>
+        </div>
+        <div id="spinning-wheel" onclick="closeNav()"></div>
+        <script src="index.js"></script>
+        <script src="game.js"></script>
+	</body>
+</html>
